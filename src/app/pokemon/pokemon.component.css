@@ -14,3 +14,7 @@ button {
     from {transform: translateY(10px);}
     to   {transform: translateY(-10px);}
 }
+
+.mat-headline {
+    color: #FFFFFF;
+}

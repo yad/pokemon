@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Pokemon } from '../pokemon/pokemon';
-import Pokedex from "./Pokedex.json";
-
+import { PokedexService } from './pokedex.service';
 @Component({
   selector: 'pokedex',
   templateUrl: './pokedex.component.html',
@@ -10,9 +9,9 @@ import Pokedex from "./Pokedex.json";
 export class PokedexComponent implements OnInit {
   Pokemons: Pokemon[];
 
-  constructor() { }
+  constructor(private pokedexService: PokedexService) { }
 
   ngOnInit() {
-    this.Pokemons = Pokedex.filter((value, index) => index < 151).map((value, index) => new Pokemon(index + 1, value));
+    this.Pokemons = this.pokedexService.GetPokedex();
   }
 }
