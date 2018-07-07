@@ -8,13 +8,15 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatCardModule } from '@angular/material';
 import { MainComponent } from './main/main.component';
 import { PokedexComponent } from './pokedex/pokedex.component';
+import { PokeballComponent } from './pokeball/pokeball.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PokemonComponent,
     MainComponent,
-    PokedexComponent
+    PokedexComponent,
+    PokeballComponent
   ],
   imports: [
     BrowserModule,
