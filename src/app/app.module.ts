@@ -9,6 +9,7 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
 import { MainComponent } from './main/main.component';
 import { PokedexComponent } from './pokedex/pokedex.component';
 import { PokeballComponent } from './pokeball/pokeball.component';
+import { EncounterComponent } from './encounter/encounter.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PokeballComponent } from './pokeball/pokeball.component';
     PokemonComponent,
     MainComponent,
     PokedexComponent,
-    PokeballComponent
+    PokeballComponent,
+    EncounterComponent
   ],
   imports: [
     BrowserModule,
